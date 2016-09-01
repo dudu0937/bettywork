@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://webnew.polaris.net.tw/skia/main1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>矽科網站首頁版型設計1</title>
+    <link rel="stylesheet" type="text/css" href="css/banner-rotator.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.banner-rotator.js"></script>
+    <style type="text/css">
+		body{
+			background-color:#fff;
+			padding:0;
+			margin:0 auto;
+		}
+
+        a, a:visited{
+            color:#08c;
+        }
+
+		.container{
+			width:100%;
+			min-width:400px;
+			margin:0 auto;
+		}
+		#fixednav{
+			display:none;
+			position:fixed;
+			top:0;
+			left:0;
+			z-index:10;
+		}
+    </style>
+	<script type="text/javascript">
+		$(window).load(
+			function() {
+				$('#rotator1').bannerRotator({
+					width:1920,
+					height:4892,
+					effect:'fade',
+					thumbnails:'none',
+					navButtons:'large',
+					tooltip:'text',
+					borderWidth:0,
+					layerOnHover:false,
+					playButton:false
+			  	});
+		   	}
+		);
+	</script>
+</head>
+<body>
+    <div id="fixednav"><img src="img/index01_nav.jpg" width="100%"></div>
+	<div class="container">
+    	<div id="rotator1" class="banner-rotator" style="border-width: 0px;">
+			<div class="br-stage" style="height: 4892px;"><div class="br-screen" style="width: 1903px; height: 4892px;"><ul class="br-slides">
+            	<li data-link="" data-target="_self" class="br-item" style="visibility: visible;">
+                    <a href="images/index_1_01.jpg" class="br-img-link"></a>
+                <img alt="" class="br-main-img" src="images/index_1_01.jpg" style="width: 1903px; height: 4849px; top: 0px; left: 0px;"></li>
+                <li data-link="" data-target="_self" class="br-item" style="visibility: hidden;">
+                    <a href="images/index_1_02.jpg" class="br-img-link"></a>
+                <img alt="" class="br-main-img" src="images/index_1_02.jpg" style="width: 1903px; height: 4849px; top: 0px; left: 0px;"></li>
+
+            </ul><div class="br-effects"><div class="br-vslice" style="transition: all 800ms ease; visibility: visible; left: 0px; width: 1903px; opacity: 1; top: 0px; transform: none; background-image: url(&quot;images/index_1_02.jpg&quot;); background-color: rgb(0, 0, 0); background-size: 1903px 4849px; background-position: 0px 0px;"></div></div><div class="br-preloader" style="display: none;"></div><div class="br-links"></div><div class="br-layers"></div><div class="br-pie-timer br-opacity-transition" style="top: 0px; right: 0px;">							<div class="br-rside"><div class="br-rotate" style="transition: none 0s; transform: rotateZ(180deg);"></div></div>							<div class="br-lside"><div class="br-rotate" style="transition: none 0s; transform: rotateZ(180deg);"></div></div>						  </div><div class="br-side-prev"><div class="br-opacity-transition"></div></div><div class="br-side-next"><div class="br-opacity-transition"></div></div></div></div>
+        </div>	
+    </div>
+<script>
+$(function(){
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 100){
+            $('#fixednav').fadeIn("fast");
+        } else {
+            $('#fixednav').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
+
+</body></html>
